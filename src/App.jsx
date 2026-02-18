@@ -3,6 +3,17 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+function MagicButton() {
+
+  return (
+    <button onClick={() => alert("You clicked the magic button!")}>
+      Click me!
+    </button>
+  )
+
+}
+
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -29,6 +40,7 @@ function App() {
         Click on the Vite and React logos to learn more
         My name is zachary robinson and this is my change
       </p>
+      <MagicButton />
     </>
   )
 }
