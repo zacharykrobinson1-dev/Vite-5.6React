@@ -41,16 +41,17 @@ const books = [
 
 function BookCard({ title, author, year }) {
   return (
-    <div style={{
-      border: "1px solid white",
-      padding: "15px",
-      margin: "15px auto",
-      width: "300px",
-      borderRadius: "10px"
-    }}>
+    <div>
       <h3>{title}</h3>
       <p>Author: {author}</p>
       <p>Published: {year}</p>
+
+      {year < 1930 ? (
+        <p>This is a Classic Novel</p>
+      ) : (
+        <p>This is a Modern Classic</p>
+      )}
+
     </div>
   )
 }
