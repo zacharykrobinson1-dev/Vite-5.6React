@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 
-{/* MagicButton component from video */
+
 function MagicButton() {
 
   return (
@@ -14,10 +14,7 @@ function MagicButton() {
   )
 
 }
-{/* ---------------COMPONENET #1-------------------- */
 
-
-{/* ---------------- DATA STRUCTURE ---------------- */
 
 
 const books = [
@@ -41,7 +38,7 @@ const books = [
   }
 ]
 
-/* -------- COMPONENT #2 -------- */
+
 function BookCard({ title, author, year }) {
   return (
     <div>
@@ -52,7 +49,7 @@ function BookCard({ title, author, year }) {
   )
 }
 
-/* -------- COMPONENT #3 -------- */
+
 function BookList({ bookArray }) {
   return (
     <div>
