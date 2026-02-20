@@ -41,7 +41,13 @@ const books = [
 
 function BookCard({ title, author, year }) {
   return (
-    <div>
+    <div style={{
+      border: "1px solid white",
+      padding: "15px",
+      margin: "15px auto",
+      width: "300px",
+      borderRadius: "10px"
+    }}>
       <h3>{title}</h3>
       <p>Author: {author}</p>
       <p>Published: {year}</p>
